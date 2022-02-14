@@ -1,0 +1,10 @@
+
+Material "Red" Diffuse (1, .5, .5) 1
+Material "Green" Diffuse (.5, 1, .5) 1
+Material "Blue" Diffuse (.5, .5, 1) 1
+
+PointLight "Light" (.75, 1, 0) (1, 1, 1)
+
+Plane "Plane" (0, -1, 0) (0, 1, 0) "Red"
+Sphere "Sphere" (-.25, 0, 2) .5 "Green"
+Triangle "Triangle" (.45, -.05, 1.75) (.7, .25, 2.5) (.95, -.1, 2) "Blue"

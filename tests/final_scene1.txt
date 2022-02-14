@@ -1,0 +1,61 @@
+
+Material "GreyMat" Diffuse (.5, .5, .5) 1
+Material "RedMat" Diffuse (1, .5, .5) 1
+Material "GreenMat" Diffuse (.5, 1, .5) 1
+Material "BlueMat" Diffuse (.5, .5, 1) 1
+Material "Grey" Diffuse (.5, .60, .65) 1
+Material "GoldMat" Diffuse (0.6431, 0.50588, 0.066667) 1
+Material "Ground" Diffuse (.7, .5, 1) 1
+Material "White" Diffuse (1, 1, 1) 1
+Material "Yellow" Diffuse (0.7, 0.5, 0) 1
+Material "Yellow2" Diffuse (0.1, 0.50588, 0.066667) 1
+Material "BrownMat" Diffuse (.4, 0.26, 0) 1
+Material "DarkMat" Diffuse (.2, 0.1, 0) 1
+Material "BG" Diffuse (0.6, 1, 1) 1
+
+Material "BunnyMat" Diffuse (1, .5, 1) 1
+
+Material "MirrorMat" Reflective (1, 1, 1) 1
+Material "GlassMat" Refractive (1, 1, 1) 1.4
+
+
+Plane "Plane" (0, -2, 0) (0, 1, 0) "Ground"
+
+PointLight "Light" (0.5, 150, 0.5) (0.6, 0.6, 0.6)
+PointLight "LightRed" (-.7, 3.8, -1.5) (0.35, 0, 0.1)
+PointLight "LightBlue" (.7, 0.7, 0.5) (0.0, 0.1, 1)
+
+
+Plane "PlaneBG" (0, 0, 100) (0, 0, -1) "Grey"
+Plane "PlaneBG1" (0, 0, -100) (0, 0, 1) "BG"
+
+
+Sphere "SphereM" (-2.2, 0, 5) 0.9 "MirrorMat"
+
+Sphere "Sphere1" (-2.2, -1.5, 4.5) .35 "BlueMat"
+Sphere "Sphere2" (-1, -1.5, 3.5) .35 "GreenMat"
+Sphere "Sphere3" (-2, -1.5, 7) .35 "GoldMat"
+Sphere "Sphere4" (-0.7, -1.5, 6) .35 "White"
+Sphere "Sphere5" (1, -1.5, 4) .35 "BrownMat"
+Sphere "Sphere6" (1.7, -1.5, 3.3) .35 "BlueMat"
+Sphere "Sphere7" (3, 0, 7) 0.8 "GlassMat"
+
+Triangle "Triangle1" (-2.5, 9, 15) (6.35, 9, 15) (-2.5, -1.5, 15) "Yellow"
+Triangle "Triangle2" (6.35, 9, 15) (6.35, -1.5, 15) (-2.5, -1.5, 15) "Yellow"
+
+Triangle "Triangle3" (-2.4, 8.9, 14.9) (6.25, 8.9, 14.9) (-2.4, -1.4, 14.9) "MirrorMat"
+Triangle "Triangle4" (6.25, 8.9, 14.9) (6.25, -1.4, 14.9) (-2.4, -1.4, 14.9) "MirrorMat"
+
+
+
+ObjModel "Cross" "tests/models/cross.obj" (-1, 1, 2.5) 0.2 "White"
+
+ObjModel "Diamond" "tests/models/diamond.obj" (1.9, 2.5, 8) 1. "White"
+
+ObjModel "Bench" "tests/models/bench.obj" (3, -2, 12) .8 "White"
+ObjModel "Bunny" "tests/models/my_bunny.obj" (3, -2, 12) .8 "White"
+
+ObjModel "Diamond1" "tests/models/diamond.obj" (0, -0.4, 5) .65 "GlassMat"
+ObjModel "Bottom" "tests/models/bottom.obj" (0, -0.4, 5) .65 "RedMat"
+ObjModel "Drone" "tests/models/drone.obj" (0.9, 11, -4) 1 "DarkMat"
+
